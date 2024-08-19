@@ -40,7 +40,7 @@ def find_closest_label(prediction, labels):
 
 
 # 예제 데이터
-L = pd.read_excel('Ldata.xlsx')
+L = pd.read_excel('Ldata.xlsx', engine='openpyxl')
 L = L[['Product','Size']]
 
 # 물건_size와 포장물_size를 각각 분리하여 새로운 컬럼으로 추가
