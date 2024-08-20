@@ -63,12 +63,14 @@ model = LinearRegression()
 # 모델 학습
 model.fit(X, y)
 
-# CSV 파일 업로드 위젯
-uploaded_csv = st.file_uploader("NPDM 시스템에서 MAF* 품번 List를 CSV 파일로 추출하여 업로드하세요", type=["csv"])
+# CSV 데이터 복사 붙여넣기 위젯
+csv_text = st.text_area("NPDM 시스템에서 MAF* 품번 List를 CSV 형식으로 복사하여 붙여넣으세요")
 
-if uploaded_csv is not None:
-    # 업로드된 파일을 판다스 데이터프레임으로 읽기
-    df = pd.read_csv(uploaded_csv)
+if csv_text:
+    # 텍스트 데이터를 판다스 데이터프레임으로 변환
+    from io import StringIO
+    csv_data = StringIO(csv_text)
+    df = pd.read_csv(csv_data)
 
     # 원하는 열만 남기기
     df = df[['Part No.', 'Technical Specification']]
