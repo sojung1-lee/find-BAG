@@ -63,14 +63,14 @@ model = LinearRegression()
 # 모델 학습
 model.fit(X, y)
 
-# CSV 데이터 복사 붙여넣기 위젯
-csv_text = st.text_area("NPDM 시스템에서 MAF* 품번 List를 CSV 형식으로 복사하여 붙여넣으세요")
+# 엑셀 데이터 복사 붙여넣기 위젯
+excel_text = st.text_area("NPDM 시스템에서 MAF* 품번 List를 엑셀 형식으로 복사하여 붙여넣으세요")
 
-if csv_text:
+if excel_text:
     # 텍스트 데이터를 판다스 데이터프레임으로 변환
     from io import StringIO
-    csv_data = StringIO(csv_text)
-    df = pd.read_csv(csv_data)
+    excel_data = StringIO(excel_text)
+    df = pd.read_csv(excel_data, delimiter='\t')  # 탭으로 구분된 데이터로 읽기
 
     # 원하는 열만 남기기
     df = df[['Part No.', 'Technical Specification']]
