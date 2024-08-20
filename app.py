@@ -127,5 +127,5 @@ if excel_text:
             st.write(f"Size {row['Technical Specification']}, Part No. {row['Part No.']}")
 
 else:
-    st.write("엑셀 파일: ctrl+A, ctrl+C → 위 입력공간: ctrl+V, ctrl+enter")
+    st.write("엑셀 파일: ctrl+A, ctrl+C  →  입력: ctrl+V, ctrl+enter")
 
