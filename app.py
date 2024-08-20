@@ -64,7 +64,7 @@ model = LinearRegression()
 model.fit(X, y)
 
 # 엑셀 데이터 복사 붙여넣기 위젯
-excel_text = st.text_area("NPDM 시스템에서 MAF* 품번 List를 엑셀 형식으로 복사하여 붙여넣으세요")
+excel_text = st.text_area("NPDM 시스템에서 MAF* 품번 List를 엑셀파일로 추출한 후 데이터를 복사하여 붙여넣으시오.<br>(엑셀 파일에서 ctrl+A, ctrl+C 이후 아래 상자에 ctrl+V)")
 
 if excel_text:
     # 텍스트 데이터를 판다스 데이터프레임으로 변환
@@ -127,5 +127,5 @@ if excel_text:
             st.write(f"Size {row['Technical Specification']}, Part No. {row['Part No.']}")
 
 else:
-    st.write("CSV 파일을 업로드하세요.")
+    st.write("데이터 붙여넣은 후 ctrl+enter 입력하시오.")
 
