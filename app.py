@@ -128,7 +128,7 @@ if excel_text:
 
 else:
     st.markdown(":one: NPDM 시스템에서 search>Model>Part No.: MAF* 검색")
-    st.markdown(":two: 모든 품번이 보이게 하단에 total 갯수 10000(max)으로 변경")
+    st.markdown(":two: 모든 품번이 보이게 하단에 total 개수 10000(max)으로 변경")
     st.markdown(":three: 임의의 품번 우클릭 후 Export>Excel Export")
     st.markdown(":four: 추출된 엑셀 파일 열어서 ctrl+A, ctrl+C")
     st.markdown(":five: 위 입력 공간에 ctrl+V, ctrl+enter")
