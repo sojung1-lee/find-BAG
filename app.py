@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Streamlit 애플리케이션 제목
-st.title("기존 BAG 품번 탐색 시스템")
+st.header("기존 BAG 품번 탐색 시스템")
 
 
 # 추가적인 데이터 처리 및 분석
@@ -132,5 +132,5 @@ else:
     st.markdown(":three: 임의의 품번 우클릭 후 Export>Excel Export")
     st.markdown(":four: 추출된 엑셀 파일 열어서 ctrl+A, ctrl+C")
     st.markdown(":five: 위 입력 공간에 ctrl+V, ctrl+enter")
-    st.markdown("정확한 방법에 대해서는 가이드 동영상 참고. (가이드 동영상 없을 시, sojung1.lee@lge.com 으로 문의)")
+    st.caption("정확한 방법에 대해서는 가이드 동영상 참고. (가이드 동영상 없을 시, sojung1.lee@lge.com 으로 문의)")
     
