@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Streamlit 애플리케이션 제목
-st.header("기존 BAG 품번 탐색 시스템")
+st.header("기존 :blue[BAG] 품번 탐색 시스템")
 
 
 # 추가적인 데이터 처리 및 분석
