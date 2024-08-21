@@ -127,10 +127,10 @@ if excel_text:
             st.write(f"Size {row['Technical Specification']}, Part No. {row['Part No.']}")
 
 else:
-    st.markdown(":one: NPDM 시스템에서 search>Model>Part No.: MAF* 검색")
-    st.markdown(":two: 모든 품번이 보이게 하단에 total 개수 10000(max)으로 변경")
-    st.markdown(":three: 임의의 품번 우클릭 후 Export>Excel Export")
-    st.markdown(":four: 추출된 엑셀 파일 열어서 ctrl+A, ctrl+C")
-    st.markdown(":five: 위 입력 공간에 ctrl+V, ctrl+enter")
+    st.markdown(":one: NPDM 시스템에서 search>Model>Part No.: :blue[MAF* 검색]")
+    st.markdown(":two: 모든 품번이 보이게 하단에 total 개수 :blue[10000(max)]으로 변경")
+    st.markdown(":three: 임의의 품번 우클릭 후 :blue[Export>Excel Export]")
+    st.markdown(":four: 추출된 엑셀 파일 열어서 :blue[ctrl+A, ctrl+C]")
+    st.markdown(":five: 위 입력 공간에 :blue[ctrl+V, ctrl+enter]")
     st.caption("정확한 방법에 대해서는 가이드 동영상 참고. (가이드 동영상 없을 시, sojung1.lee@lge.com 으로 문의)")
     
