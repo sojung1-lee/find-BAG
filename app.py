@@ -132,5 +132,5 @@ else:
     st.markdown(":three: 임의의 품번 우클릭 후 Export>Excel Export")
     st.markdown(":four: 추출된 엑셀 파일 열어서 ctrl+A, ctrl+C")
     st.markdown(":five: 위 입력 공간에 ctrl+V, ctrl+enter")
-    st.caption("정확한 방법에 대해서는 가이드 동영상 참고. (가이드 동영상 없을 시, sojung1.lee@lge.com 으로 문의)")
+    st.caption("정확한 방법에 대해서는 가이드 동영상 참고. (가이드 동영상 필요 시, sojung1.lee@lge.com 으로 문의)")
     
